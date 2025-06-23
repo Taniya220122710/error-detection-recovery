@@ -1,0 +1,26 @@
+TAC:
+t1 = 2
+t2 = 3
+t3 = 4
+t4 = t2 * t3
+t5 = t1 + t4
+a = t5
+label t6
+t8 = 10
+t9 = a - t8
+ifFalse t9 goto t7
+t10 = 1
+t11 = a - t10
+a = t11
+goto t6
+label t7
+
+Final env: {'t1': 2, 't2': 3, 't3': 4, 't4': 12, 't5': 14, 'a': 10, 't8': 10, 't9': 0, 't10': 1, 't11': 10}
+
+
+
+
+
+
+
+
